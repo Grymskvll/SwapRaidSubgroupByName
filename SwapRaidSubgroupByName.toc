@@ -1,0 +1,8 @@
+## Interface: 11200
+## Author: Idiot
+## Title: SwapRaidSubgroupByName
+## Notes: I hate my life
+## Version: 0.I.want.to.die.1
+## DefaultState: enabled
+
+SwapRaidSubgroupByName.lua
