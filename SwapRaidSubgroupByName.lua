@@ -1,6 +1,7 @@
 local NumRaidMembers
 local nummembers = GetNumRaidMembers
 local swap = SwapRaidSubgroup
+local set = SetRaidSubgroup
 
 local RaidIndices = CreateFrame("FRAME", "RaidIndices");
 RaidIndices:RegisterEvent("RAID_ROSTER_UPDATE")
@@ -22,6 +23,10 @@ function RaidIndices:OnEvent()
 		swapraidsubgroupbyname = SwapRaidSubgroupByName
 		swapbyname = SwapRaidSubgroupByName
 		SwapByName = SwapRaidSubgroupByName
+		
+		setraidsubgroupbyname = SetRaidSubgroupByName
+		setbyname = SetRaidSubgroupByName
+		SetByName = SetRaidSubgroupByName
 
 		this.table = {}
 		NumRaidMembers = nummembers()
@@ -41,4 +46,9 @@ function SwapRaidSubgroupByName(name1, name2)
 	i1 = RaidIndices.table[string.lower(name1)]
 	i2 = RaidIndices.table[string.lower(name2)]
 	swap(i1, i2)
+end
+
+function SetRaidSubgroupByName(name, subgroup)
+	local i = RaidIndices.table[string.lower(name)]
+	set(i, subgroup)
 end
