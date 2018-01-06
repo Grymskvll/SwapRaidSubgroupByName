@@ -10,3 +10,8 @@ Extract into your "World of Warcraft/Interface/Addons" folder. If downloaded dir
 * /run swapraidsubgroupbyname("name1", "name2")
 * /run SwapByName("name1", "name2")
 * /run swapbyname("name1", "name2")
+
+* /run SetRaidSubgroupByName("name", subgroup)
+* /run setraidsubgroupbyname("name", subgroup)
+* /run SetByName("name", subgroup)
+* /run setbyname("name", subgroup)
